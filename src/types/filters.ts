@@ -3,5 +3,5 @@ export enum SortBy {
   Username = 'username',
   Email = 'email',
   Website = 'website',
-  None = '',
+  None = 'none',
 }
