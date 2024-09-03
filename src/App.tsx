@@ -67,15 +67,15 @@ export function App() {
           color="black"
           ariaLabel="circles-loading"
           wrapperStyle={{}}
-          wrapperClass=""
+          wrapperClass="loading"
           visible={true}
         />
       )}
 
-      {!filteredUsers.length && <p>Nothing match</p>}
+      {!filteredUsers.length && usersStatus === 'idle' && <p>Nothing match</p>}
 
       {usersStatus === "idle" && filteredUsers.length > 0 && (
-        <table className="table is-bordered is-striped is-hoverable is-narrow is-fullwidth">
+        <table className="table is-bordered is-striped is-hoverable is-narrow is-fullwidth users_table">
           <thead>
             <tr>
               <th>Name</th>
